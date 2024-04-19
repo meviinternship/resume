@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briyani</title>
+    <link rel="stylesheet" href="briyani_style.css">
+</head>
+<body>
+    <div class="briyani">
+        <h1>Sike Biryani</h1>
+        <input type="radio" name="meals" id="item1" value="q">Hyderbadi Dum
+        <input type="radio" name="meals" id="item2" value="w">Thalassery
+        <input type="radio" name="meals" id="item3" value="e">Ambur
+        <input type="radio" name="meals" id="item4" value="a">Thalappakatti
+        <input type="radio" name="meals" id="item5" value="s">Kozhikode <br><br>
+
+        <button onclick="add()" id="sel">Add Meal</button>
+        <button onclick="bill()">Total Bill</button> <br><br>
+
+        <table>
+            <tr>
+                <td>Items</td>
+                <td>Qty</td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <th>Hyderbadi Dum</th>
+                <td><input type="number" id="hyder" disabled></td>
+                <td><input type="number" id="hyder_price" disabled></td>
+            </tr>
+            <tr>
+                <th>Thalassery</th>
+                <td><input type="number" id="thala" disabled></td>
+                <td><input type="number" id="thala_price" disabled></td>
+            </tr>
+            <tr>
+                <th>Ambur</th>
+                <td><input type="number" id="ambur" disabled></td>
+                <td><input type="number" id="ambur_price" disabled></td>
+            </tr>
+<tr>
+                <th>Thalappakatti</th>
+                <td><input type="number" id="thalapa" disabled></td>
+                <td><input type="number" id="thalapa_price" disabled></td>
+            </tr>
+            <tr>
+                <th>Kozhikode</th>
+                <td><input type="number" id="kozhi" disabled></td>
+                <td><input type="number" id="kozhi_price" disabled></td>
+            </tr>
+            <tr>
+                <th style="text-align: end; padding-right: 10px;">Total</th>
+                <td><input type="number" id="qty" disabled></td>
+                <td><input type="number" id="total" disabled></td>
+            </tr>
+        </table><br>
+    </div>
+    <script src="briyani.js"></script>
+</body>
+</html>
